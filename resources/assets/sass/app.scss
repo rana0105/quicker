@@ -1,0 +1,87 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*.navbar{
+	margin-top: 0px;
+    background-color: #e3f2fd;
+}*/
+
+.navbar-default {
+  height: 70px;
+  color: red;
+}
+.panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    &-column {
+        flex: 4;
+        padding-right: 15px;
+    }
+    &-operator {
+        flex: 4;
+        padding-right: 15px;
+    }
+    &-input {
+        flex: 6;
+        padding-right: 15px;
+    }
+    &-btn {
+        flex: 1;
+    }
+}
+
+.pagination-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination-input {
+    width: 45px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    
+    #flip-scroll .cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+    #flip-scroll * html .cf { zoom: 1; }
+    #flip-scroll *:first-child+html .cf { zoom: 1; }
+    
+    #flip-scroll table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+ 
+    #flip-scroll th,
+    #flip-scroll td { margin: 0; vertical-align: top; }
+    #flip-scroll th { text-align: left; }
+    
+    #flip-scroll table { display: block; position: relative; width: 100%; }
+    #flip-scroll thead { display: block; float: left; }
+    #flip-scroll tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
+    #flip-scroll thead tr { display: block; }
+    #flip-scroll th { display: block; text-align: right; }
+    #flip-scroll tbody tr { display: inline-block; vertical-align: top; }
+    #flip-scroll td { display: block; min-height: 1.25em; text-align: left; }
+ 
+ 
+    /* sort out borders */
+ 
+    #flip-scroll th { border-bottom: 0; border-left: 0; }
+    #flip-scroll td { border-left: 0; border-right: 0; border-bottom: 0; }
+    #flip-scroll tbody tr { border-left: 1px solid #babcbf; }
+    #flip-scroll th:last-child,
+    #flip-scroll td:last-child { border-bottom: 1px solid #babcbf; }
+}

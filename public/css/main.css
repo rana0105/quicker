@@ -1,0 +1,9 @@
+.navbar {
+	height: 70px;
+	background-color: #4286f4;
+}
+
+.navbar-default {
+    background-color: #0f006f;
+    border-color: #030033;
+}
